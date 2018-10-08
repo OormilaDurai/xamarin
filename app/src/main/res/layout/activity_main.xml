@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/framelayout"
+        android:layout_width="323dp"
+        android:layout_height="235dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/shadow_0">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/yes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:text="XAMARIN"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/cntryVal"
+            android:layout_width="257dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/msg"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/spinner_dropdon_white"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="258dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/edittext_grey_border"
+            android:ems="10"
+            android:hint="Enter text"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/button_rounded_corners_green"
+        android:text="YES"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/no1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/yes"
+        android:layout_alignStart="@+id/yes"
+        android:layout_below="@+id/yes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_rounded_corners_red"
+        android:text="NO"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/yes"
+        android:layout_alignStart="@+id/yes"
+        android:layout_below="@+id/no1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_rounded_corners_blue"
+        android:text="SEND"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
